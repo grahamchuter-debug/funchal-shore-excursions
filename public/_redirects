@@ -1,0 +1,10 @@
+# Canonical host redirect: www -> non-www (301)
+https://www.funchalshoreexcursions.com/*  https://funchalshoreexcursions.com/:splat  301!
+http://www.funchalshoreexcursions.com/*   https://funchalshoreexcursions.com/:splat  301!
+
+# HTTP -> HTTPS fallback
+http://funchalshoreexcursions.com/*       https://funchalshoreexcursions.com/:splat  301!
+
+# Friendly alias for the cruise port guide
+/funchal-cruise-port-guide  /cruise-port-guide/  301
+/funchal-cruise-port-guide/ /cruise-port-guide/  301

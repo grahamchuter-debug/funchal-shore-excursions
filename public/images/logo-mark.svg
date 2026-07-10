@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Atlantic circle -->
+  <circle cx="50" cy="50" r="48" fill="#0b283c"/>
+  <!-- Island silhouette / mountain peaks -->
+  <path d="M18 68 L35 38 L46 52 L55 30 L72 55 L82 68 Z" fill="#2d6b1f" opacity="0.85"/>
+  <!-- Dramatic peak highlight -->
+  <path d="M55 30 L64 46 L55 43 Z" fill="#edf3f7" opacity="0.55"/>
+  <!-- Ocean wave base -->
+  <path d="M14 72 Q32 66 50 70 Q68 74 86 68 L86 80 Q68 76 50 80 Q32 84 14 78 Z" fill="#1a597c" opacity="0.7"/>
+  <!-- Wine-red accent dot — levada spring -->
+  <circle cx="55" cy="30" r="2.5" fill="#b86040" opacity="0.9"/>
+</svg>

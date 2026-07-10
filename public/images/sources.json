@@ -1,0 +1,12 @@
+{
+  "platform": "Wikimedia Commons",
+  "license": "Various CC licenses — see source URLs",
+  "images": [
+    {
+      "file": "private.jpg",
+      "commons": "File:Ilha da Madeira.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ilha_da_Madeira.jpg",
+      "license": "CC BY-SA 4.0"
+    }
+  ]
+}
