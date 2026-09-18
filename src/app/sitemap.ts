@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getAllGuideSlugs().map((s) => `/guides/${s}`),
     ...getAllComparisonSlugs().map((s) => `/compare/${s}`),
     ...getAllSchedulePortSlugs().map((s) => `/ship-schedules/${s}`),
-    ...getAllSchedulePortSlugs().flatMap((s) => SCHEDULE_YEARS.map((y) => portYearPath(s, y))),
+    ...getAllSchedulePortSlugs().flatMap((s) => [] /* Wave2: no live Funchal schedule years */),
     ...getAllSchedulePortSlugs().flatMap((s) => getVerifiedMonthKeys(s).map((mk) => portMonthPath(s, mk))),
   ];
 

@@ -55,7 +55,7 @@ const schedulesByPort: Record<string, ScheduleEntry[]> = {
   funchal: (funchalSchedule as ScheduleEntry[]) ?? [],
 };
 
-export const scheduleYears: ScheduleYear[] = [2026, 2027];
+export const scheduleYears: ScheduleYear[] = [];
 
 export function getScheduleEntries(slug: string): ScheduleEntry[] {
   return schedulesByPort[slug] ?? [];
