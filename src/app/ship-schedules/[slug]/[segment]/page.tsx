@@ -31,10 +31,20 @@ export function generateStaticParams() {
   const params: { slug: string; segment: string }[] = [];
   for (const slug of getAllSchedulePortSlugs()) {
     for (const year of SCHEDULE_YEARS) {
+      // Skip empty years so HOLD/absent bodies do not publish year pages
+      if (getScheduleEntriesForYear(slug, year).length === 0) continue;
       params.push({ slug, segment: String(year) });
     }
     for (const monthKey of getVerifiedMonthKeys(slug)) {
       params.push({ slug, segment: monthKeyToSlug(monthKey) });
+    }
+  }
+  // Static export requires generateStaticParams to return ≥1 path when the
+  // dynamic route file exists. If no live schedule years/months, emit a
+  // sentinel that immediately 404s (never linked from sitemap/hub).
+  if (params.length === 0) {
+    for (const slug of getAllSchedulePortSlugs()) {
+      params.push({ slug, segment: "unavailable" });
     }
   }
   return params;
